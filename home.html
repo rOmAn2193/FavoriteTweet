@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8"/>
+
+<title> Home Page</title>
+
+<link rel="stylesheet" type="text/css" href="twitter.css">
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/twitter.js"></script>  
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/OAuth.php"></script>
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/twitter.php"></script>
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/twitteroauth.php"></script>
+
+<div id="date_time"></div>
+<script type="text/javascript">window.onload = date_time('date_time');</script>
+
+<div id='cssmenu'>
+<ul>
+   <li><a href='http://www.coloradomesa.edu/~ropuzey/web2/home.html'><span>Home</span></a></li>
+   <li><a href='https://twitter.com/' target="_blank"><span>Twitter</span></a></li>
+   <li><a href='http://www.coloradomesa.edu/~ropuzey/web2/about.html'><span>About</span></a></li>
+   <li><a href='http://www.coloradomesa.edu/~ropuzey/web2/contact.html'><span>Contact</span></a></li>
+</ul>
+</div>
+</head>
+
+	<body background="bird.png">
+	<h1> Favorite Twitter Searches</h1>
+	<p id="welcomeMessage"></p>
+	<form action="#" autocomplete="on">
+		<p><input id="query" type="text"
+			placeholder="Enter Your Twitter Search">
+		<a href="https://dev.twitter.com/docs/using-search">
+		Twitter Search Operators</a></p>
+	<p> <input id="tag" type="text" placeholder="Tag your query">
+	<input type="button" value="Save" id="saveButton">
+	<input type="button" value="Clear All Saved Searches" id="clearButton"> </p>
+	
+	</form>
+	<h1> Previously Tagged Searches</h1>
+	<div id="searches"></div>
+
+
+</body>
+</html>

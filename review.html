@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head><title> Example Javascript </title> </head>
+
+<body>
+
+<script>
+
+	i=10;
+	j=i/"20";
+	
+	name="Karl";
+	f=3.14159;
+	male=true;
+	
+	function mystery(n)
+	{
+		if (n<=2) 
+		{
+			return 1;
+		}
+		
+		else
+		 
+		{
+			return mystery(n-3)+mystery(n-8);
+		}
+	}
+	
+	function fun2(stop)
+	{
+		var i;
+		for (i=0;i<stop;i++)
+		{
+			document.write("value="+i+"</br>");
+			
+		}
+		
+	}
+	
+	function fun(stop)
+	{
+		var i;
+		for (i=0;i<stop;i++)
+		{
+			fun2(i);
+			
+		}
+		
+	}
+	document.write(mystery(5));
+
+</script>
+</body>
+</html>

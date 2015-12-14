@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8"/>
+
+<title> About Twitter</title>
+
+<link rel="stylesheet" type="text/css" href="twitter.css">
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/twitter.js"></script> 
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/twitter.php"></script> 
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/OAuth.php"></script>
+<script src="http://www.coloradomesa.edu/~ropuzey/web2/twitteroauth.php"></script>
+
+<div id="date_time"></div>
+<script type="text/javascript">window.onload = date_time('date_time');</script>
+
+<div id='cssmenu'>
+<ul>
+   <li><a href='http://www.coloradomesa.edu/~ropuzey/web2/home.html'><span>Home</span></a></li> 
+   <li><a href='https://twitter.com/' target="_blank"><span>Twitter</span></a></li>
+   <li><a href='http://www.coloradomesa.edu/~ropuzey/web2/about.html'><span>About</span></a></li>
+   <li><a href='http://www.coloradomesa.edu/~ropuzey/web2/contact.html'><span>Contact</span></a></li>
+</ul>
+</div>
+
+</head>
+
+<body background="bird.png">
+
+	<h1> About Twitter's API </h1>
+	<img src="logo.gif" width="450" height="300" target="_blank" onclick="javascript:location.href='https://twitter.com/twitter';">
+	<h2>Updated on Wed, 2013-10-02 07:34</h2>
+	
+		<div style="border:3px solid red;">
+<font face="franklin gothic medium">The Twitter Search API is part of Twitter's v1.1 REST API. It allows queries against the indices of recent or popular Tweets and behaves similarily to, but not exactly like the Search feature available in Twitter mobile or web clients, such as Twitter.com search. Before getting involved, it's important to know that the Search API is focused on relevance and not completeness. This means that some Tweets and users may be missing from search results. If you want to match for completeness you should consider using a Streaming API instead. A detailed reference on this API endpoint can be found at GET search/tweets.
+How to build a query? The best way to build a query and test if it's valid and will return matched Tweets is to first try it at twitter.com/search. As you get a satisfactory result set, the URL loaded in the browser will contain the proper query syntax that can be reused in the API endpoint. Please note that now API v1.1 requires that the request must be authenticated, check Authentication & Authorization documentation for more details on how to do it. Also note that the search results at twitter.com may return historical results while the Search API usually only serves tweets from the past week.
+</font>
+</div> 
+
+</body>
+</html>
